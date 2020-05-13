@@ -1,0 +1,74 @@
+
+@keyframe engorge {
+  from{
+      background-color: #FFBF00;
+  }
+  to {
+      background-color: #72A0C1;
+  }
+}
+
+@keyframes fontChange {
+  from{color: hotpink;}
+  to {color: #AB274F;}
+}
+@keyframes moveDown{
+  0%{margin-top: 10px;
+  border-color:#F0F8FF;
+  background-color:#B284BE;
+}
+  50%{margin-top:100px;
+  border-color:#C9FFE5;
+  background-color:#FFBF00;
+}
+  100%{margin-top: 300px;
+  border-color:#B284BE;
+  background-color:#F0F8FF;
+}
+}
+
+body{
+  background-color: #E32636;
+}
+
+
+.content{
+  border-radius: 15px;
+  border-style:solid;
+  border-color: #F0F8FF;
+  margin-top: 10px;
+  background-color:#B284BE;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  animation-name: moveDown;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #AB274F;
+
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #FFBF00;
+  animation-name: engorge;
+  animation-duration: 4s;
+  border-radius: 0px;
+}
+a{
+  color: hotpink;
+  font-size: 30px;
+  font font-family: Arial;
+  font-weight: bold;
+  animation-name: fontChange;
+  animation-duration: 4s;
+  animation-duration: infinite;
+  animation-iteration-count: infinite;
+}
